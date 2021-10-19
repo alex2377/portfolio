@@ -24,12 +24,18 @@
     }
   }
   &__link {
-    img {
+    svg {
       display: block;
       width: 30px;
       height: 30px;
+      path {
+        transition: all 0.5s;
+      }
+      &:hover path {
+        fill: red;
+      }
     }
-    img[alt="vk"] {
+    .vk {
       transform: rotate(-90deg);
     }
   }
