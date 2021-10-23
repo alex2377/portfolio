@@ -1,0 +1,68 @@
+.aboutMe {
+  padding: 120px 0;
+  &__wrapper {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 70px;
+  }
+  &__photo {
+    max-height: 700px; //нужна фотка поменьше чтобы не ограничивать высоту сетки
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__subtitle {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 6px;
+    @include before_circle;
+  }
+  &__titleServices {
+    margin-bottom: 20px;
+  }
+  &__divider {
+    border: solid 3px $main-color;
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px 50px;
+  }
+  &__serviceItem {
+    position: relative;
+    padding-left: 60px;
+    @include before_circle;
+    &:before {
+      top: 0;
+    }
+    svg {
+      position: absolute;
+      top: 8px;
+      left: 5px;
+      width: 25px;
+      height: 25px;
+      path {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  &__serviceTitle {
+    margin-bottom: 6px;
+  }
+  &__serviceText {
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
