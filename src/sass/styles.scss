@@ -11,9 +11,15 @@
   width: 1140px;
   margin: 0 auto;
 }
+.divider {
+  border: solid 3px $main-color;
+  width: 60px;
+  margin-bottom: 20px;
+}
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/sidepanel";
 @import "blocks/menu";
 @import "blocks/aboutMe";
+@import "blocks/resume";
