@@ -10,7 +10,9 @@
   &__photo {
     img {
       width: 100%;
-      max-height: 600px;
+      max-height: 605px;
+      object-fit: cover;
+      object-position: 0 0;
     }
   }
   &__descr {
@@ -29,9 +31,22 @@
   }
   &__link {
     margin-right: 25px;
-    img {
-      max-width: 30px;
-      max-height: 30px;
+    &:hover {
+      text-decoration: none;
+      svg {
+        transform: scale(1.05);
+        path {
+          fill: red;
+        }
+      }
+    }
+    svg {
+      transition: all 0.5s;
+      width: 30px;
+      height: 30px;
+      path {
+        transition: all 0.5s;
+      }
     }
   }
   &__form {
