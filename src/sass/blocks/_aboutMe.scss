@@ -1,7 +1,6 @@
 .aboutMe {
   padding-top: 120px;
   &__wrapper {
-    width: 1040px;
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: minmax(245px, auto) minmax(255px, auto);
@@ -38,30 +37,30 @@
   }
   &__services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 20px 50px;
-  }
-  &__serviceItem {
-    position: relative;
-    padding-left: 60px;
-    @include before_circle;
-    &:before {
-      top: 0;
+    &Item {
+      position: relative;
+      padding-left: 60px;
+      @include before_circle;
+      &:before {
+        top: 0;
+      }
+      img {
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        width: 25px;
+        height: 25px;
+      }
     }
-    img {
-      position: absolute;
-      top: 8px;
-      left: 5px;
-      width: 25px;
-      height: 25px;
+    &Title {
+      margin-bottom: 6px;
     }
-  }
-  &__serviceTitle {
-    margin-bottom: 6px;
-  }
-  &__serviceText {
-    line-height: 18px;
-    font-size: 12px;
-    font-weight: 500;
+    &Text {
+      line-height: 18px;
+      font-size: 12px;
+      font-weight: 500;
+    }
   }
 }
