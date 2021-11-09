@@ -74,6 +74,12 @@
       column-gap: 35px;
     }
   }
+  .pricelist {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      padding: 0;
+    }
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -91,7 +97,7 @@
     }
   }
   .aboutMe {
-    padding-top: 40px;
+    padding-top: 45px;
     &__wrapper {
       grid-template: 400px auto auto/1fr;
     }
@@ -104,10 +110,9 @@
     }
   }
   .resume {
-    padding-top: 60px;
+    padding-top: 45px;
     &__wrapper {
-      padding-left: 6px;
-      padding-right: 6px;
+      padding: 15px 6px 0 6px;
     }
   }
   .skills {
@@ -123,6 +128,17 @@
     }
     &__ratingsProgress {
       width: 300px;
+    }
+  }
+  .portfolio {
+    .divider {
+      margin-bottom: 40px;
+    }
+  }
+  .pricelist {
+    padding-top: 45px;
+    &__wrapper {
+      justify-content: center;
     }
   }
 }
@@ -180,6 +196,22 @@
 
     .divider {
       margin-bottom: 20px;
+    }
+  }
+  .portfolio {
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__subtitle {
+      line-height: 36px;
+    }
+  }
+  .pricelist {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
+    .divider {
+      margin-bottom: 25px;
     }
   }
 }

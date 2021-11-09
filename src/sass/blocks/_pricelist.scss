@@ -9,7 +9,7 @@
     margin-bottom: 60px;
   }
   &__wrapper {
-    width: 1040px;
+    padding: 0 60px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -21,10 +21,7 @@
     position: relative;
     padding-left: 25px;
     display: grid;
-    grid-template: minmax(21px, max-content) minmax(18px, auto) / repeat(
-        2,
-        auto
-      );
+    grid-template: minmax(21px, auto) minmax(18px, auto) / repeat(2, auto);
     row-gap: 5px;
     @include before_circle;
     &:before {
@@ -38,6 +35,7 @@
   }
   &__itemPrice {
     font-weight: bold;
+    text-align: right;
     font-size: 14px;
     line-height: 21px;
     justify-self: end;
